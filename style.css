@@ -97,4 +97,8 @@ form button:hover{
    .wrapper{
     width: 80% !important;
    }
+
+   form button{
+    cursor: default;
+   }
 }
