@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text to Speech</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    
 </head>
 <body>
     <div class="wrapper">
@@ -12,22 +13,22 @@
         <form action="#">
             <div class="row">
                 <label for="">Enter Text</label>
-                <textarea> </textarea>
+                <textarea id="text-input" placeholder="Enter text to speak"></textarea>
             </div>
             <div class="row">
                 <label for="">Select Voice</label>
                 <div class="outer">
-                    <select name="" id="">
-                        <option value="">Goggle (hi - IN)</option>
-                        <option value="">Goggle Deutsch (de - DEN)</option>
-                        <option value="">Goggle UK English Female (en - Gr)</option>
+                    <select id="voice-select">
+                        <option value="">Select a voice</option>
                     </select>
                 </div>
             </div>
-            <button>Convert To Speech</button>
+            <button id="speak-btn">Speak</button>
+            <button id="generate-audio-btn">Generate MP3 Audio</button>
         </form>
     </div>
 
+    
     <script src="/script.js"></script>
 </body>
 </html>
